@@ -1,0 +1,20 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compile",
+            "type": "shell",
+            "command": "javac",
+            "args": [
+                "--module-path", "lib/javafx-sdk-17.0.11/lib",
+                "--add-modules", "javafx.controls",
+                "-d", "bin",
+                "src/TextColorSelector.java"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
